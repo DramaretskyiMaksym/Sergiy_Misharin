@@ -9,21 +9,52 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <img src="" alt="">
-    <nav>
-      <ul>
-        <li><a href="">Abou us</a></li>
-        <li><a href="">Сontact</a></li>
-        <li><a href="">History</a></li>
-        <li><a href="">Blog</a></li>
-      </ul>
-    </nav>
-    <div>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
+  <section class="header__background">
+    <div class="wrapper">
+      <header class="header">
+        <a href="index.html">
+          <img src="./images/Logo.svg" alt="logo" width="44" height="44">
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link .active-link " href="#">
+                Обо мне
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Контакт
+              </a>
+            </li>
+            <li class="nav__item">
+              <a  class="nav__link" href="#">
+                История
+              </a>
+            </li>
+            <li class="nav__item">
+              <a  class="nav__link" href="#">
+                Блог
+              </a>
+            </li>
+          </ul>
+          <div class="nav__shange-block">
+            <div class="container-lang">
+              <button class="header__btn-lang" data-btn="ru">RU</button>
+              <button class="header__btn-lang" data-btn="ua">UA</button>
+            </div>
+            <div class="nav__block-social">
+              <a><img src="./images/instagram.svg"alt=""></a>
+              <a><img src="./images/telegram.svg" alt=""></a>
+              <a><img src="./images/facebook.svg" alt=""></a>
+            </div>
+          </div>
+        </nav>
+        <div class="burger">
+          <span href=""></span>
+        </div>
+      </header>
     </div>
-  </header>
+  </section>
 </body>
 </html>
