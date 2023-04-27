@@ -1,0 +1,50 @@
+
+  .banner{
+    padding-top: 50px;
+  }
+  .sergiy__photo-banner {
+    display: flex;
+    height: 325px;
+    width: auto;
+    background-image: url("../../images/sergiy_banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 40px;
+  }
+  .banner__block-description{
+    p{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+  
+    }
+  }
+  .banner__title{
+    display: flex;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+  }
+  .banner__text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    span {
+      font-weight: 600
+    };
+  }
+  .banner__button{
+    display: flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #F9FBFB;
+    background-color: #30889B;
+    border: 0px;
+    border-radius: 2px;
+  }
+

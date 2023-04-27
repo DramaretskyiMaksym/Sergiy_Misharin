@@ -11,15 +11,21 @@
 .burger{
   display: none;
 }
-@media(max-width:768px){
+.nav{
+  display: none;
+}
+
+
+
+
+@media(max-width:1024px){
   .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 15px;
   }
-
-  .nav{
+  .header .nav{
     display: none;
     flex-direction: column;
     position: fixed;
@@ -33,6 +39,7 @@
     background-color: #FFCCBB;
     animation: burgerAnimation 0.4s;
   }
+
   .nav__list{
     display: flex;
     align-items: center;
@@ -141,9 +148,8 @@
       justify-content: space-around;
       gap: 30px;
     }
-    
-  }
-@media(min-width:768px){
+}
+@media(min-width:1024px){
   .header__background{
     background-color: #F9FBFB;
   }
@@ -152,6 +158,12 @@
     align-items: center;
     justify-content: space-between;
     padding:15px 0px
+  }
+  .logo{
+    img{
+      width: 48px;
+      height: 48px;
+    }
   }
   .nav{
     display: flex;
@@ -173,12 +185,12 @@
   }
   .nav__link{
     display: flex;
-    width: 100px;
+    width: 106px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
     padding: 10px 10px;
-    color: black;
+    color: rgb(46, 43, 43);
     letter-spacing: 0.03em;
     &:hover{
       text-align: center;
@@ -202,12 +214,22 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    gap: 20px;
   }
   .nav__block-social{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 8px;
+    img{
+      width: 26px;
+      height: 26px;
+    }
   }
-
-
+  .container-lang{
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
 }

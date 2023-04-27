@@ -349,9 +349,9 @@ template {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  min-width: 375px;
+  min-width: 360px;
   overflow: auto;
   background-color: #FFFFFF;
 }
@@ -375,14 +375,18 @@ body a {
   display: none;
 }
 
-@media (max-width: 768px) {
+.nav {
+  display: none;
+}
+
+@media (max-width: 1024px) {
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 15px;
   }
-  .nav {
+  .header .nav {
     display: none;
     flex-direction: column;
     position: fixed;
@@ -501,7 +505,7 @@ body a {
     gap: 30px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header__background {
     background-color: #F9FBFB;
   }
@@ -510,6 +514,10 @@ body a {
     align-items: center;
     justify-content: space-between;
     padding: 15px 0px;
+  }
+  .logo img {
+    width: 48px;
+    height: 48px;
   }
   .nav {
     display: flex;
@@ -529,12 +537,12 @@ body a {
   }
   .nav__link {
     display: flex;
-    width: 100px;
+    width: 106px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
     padding: 10px 10px;
-    color: black;
+    color: rgb(46, 43, 43);
     letter-spacing: 0.03em;
   }
   .nav__link:hover {
@@ -557,10 +565,72 @@ body a {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    gap: 20px;
   }
   .nav__block-social {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 8px;
   }
+  .nav__block-social img {
+    width: 26px;
+    height: 26px;
+  }
+  .container-lang {
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.banner {
+  padding-top: 50px;
+}
+
+.sergiy__photo-banner {
+  display: flex;
+  height: 325px;
+  width: auto;
+  background-image: url("../../images/sergiy_banner.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 40px;
+}
+
+.banner__block-description p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.banner__title {
+  display: flex;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.03em;
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.banner__text span {
+  font-weight: 600;
+}
+
+.banner__button {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #F9FBFB;
+  background-color: #30889B;
+  border: 0px;
+  border-radius: 2px;
 }
