@@ -5,12 +5,17 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat',Arial, sans-serif;
   font-style: normal;
   min-width: 360px;
   overflow: auto;
   background-color:#FFFFFF;
   a {
   text-decoration: none;
+  }
+  .span{
+    display: block;
+    width: 100px;
+    height: 100px;
   }
 }

@@ -1,0 +1,145 @@
+.block__arrow{
+  display: none;
+}
+
+.block__arrow-modile{
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 25px;
+}
+
+.arrow__left-modile{
+  content: "";
+  position: absolute;
+  width: 30px;
+  border: none;
+  top: 0px;
+  left: 0px;
+  padding: 12px 10px;
+  background-color:#ffffff;
+  background-image: url('../images/arrow-left.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.arrow__right-modile{
+  content: "";
+  position: absolute;
+  width: 40px;
+  top: 0px;
+  right:0px;
+  border: none;
+  padding: 12px 30px;
+  background-color:#6EB5C0;
+  border-radius: 6px;
+  background-image: url('../images/arrow-rigth.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:auto;
+}
+
+.title__section-slider{
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  h2{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+}
+
+.human__reviews{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+}
+.human__slider{
+  display: flex;
+  position: relative;
+  left: 0px;
+  transition: all ease 1s;
+  width: 100%;
+  gap: 20px;
+}
+
+.human__image-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100;
+  img{
+    display: flex;
+    width: 300px;
+    height: 100%;
+  };
+}
+
+.text__reviews{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  p{
+    max-width: 280px;
+  }
+}
+
+@media(min-width:768px){
+  .block__arrow-modile{
+    display: none;
+  }
+  .block__arrow{
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 25px;
+  }
+  .arrow__left{
+    content: "";
+    position: absolute;
+    width: 30px;
+    border: none;
+    top: 0px;
+    left: 0px;
+    padding: 12px 10px;
+    background-color:#ffffff;
+    background-image: url('../images/arrow-left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .arrow__right{
+    content: "";
+    position: absolute;
+    width: 40px;
+    top: 0px;
+    right:0px;
+    border: none;
+    padding: 12px 30px;
+    background-color:#6EB5C0;
+    border-radius: 6px;
+    background-image: url('../images/arrow-rigth.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+  }
+
+  .human__slider{
+    display: flex;
+    position: relative;
+    left: 0px;
+    transition: all ease 1s;
+    gap:40px;
+    width: 100%;
+  }
+
+  .human__image-box{
+    max-width: 200px;
+  }
+}
