@@ -348,6 +348,10 @@ template {
   padding: 0px;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 body {
   font-family: "Montserrat", Arial, sans-serif;
   font-style: normal;
@@ -395,13 +399,12 @@ body .span {
     display: none;
     flex-direction: column;
     position: fixed;
-    height: 100%;
-    width: 50vh;
     top: 0;
     right: 0;
     overflow-y: auto;
     padding: 60px 22px;
     gap: 50px;
+    z-index: 50;
     background-color: #FFCCBB;
     animation: burgerAnimation 0.4s;
   }
@@ -437,6 +440,8 @@ body .span {
     justify-content: flex-end;
     width: 30px;
     height: 30px;
+    position: fixed;
+    right: 10px;
   }
   .burger span {
     height: 2px;
@@ -673,14 +678,28 @@ body .span {
   }
 }
 @media (min-width: 1440px) {
+  .banner__title {
+    font-size: 67px;
+    line-height: 74px;
+  }
   .banner__block-description {
     padding-top: 50px;
+  }
+  .banner__text p {
+    font-size: 20px;
+    line-height: 28px;
   }
   .sergiy__photo-banner {
     max-width: 566px;
     height: 566px;
   }
 }
+.slider__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .block__arrow {
   display: none;
 }
@@ -738,6 +757,7 @@ body .span {
 
 .human__reviews {
   display: flex;
+  align-items: flex-start;
   width: 100%;
   overflow: hidden;
 }
@@ -745,6 +765,7 @@ body .span {
 .human__slider {
   display: flex;
   position: relative;
+  justify-content: flex-start;
   left: 0px;
   transition: all ease 1s;
   width: 100%;
@@ -755,7 +776,7 @@ body .span {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100;
+  width: 100%;
 }
 .human__image-box img {
   display: flex;
@@ -822,4 +843,55 @@ body .span {
   .human__image-box {
     max-width: 200px;
   }
+}
+.as {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6EB5C0;
+}
+
+.slide-container {
+  max-width: 1640px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 40px 0px;
+}
+
+.slider-content {
+  margin: 0 40px;
+}
+
+.card {
+  width: 200px;
+  background-color: #ffffff;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.card-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
 }

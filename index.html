@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script defer src="./js/slick.min.js"></script>
+  <script defer src="./js/swiper-bundle.min.js"></script>
   <script defer src="./js/javascript.js"></script>
   <title>Document</title>
 </head>
@@ -67,7 +69,7 @@
   </section>
   <section class="wrapper">
     <div class="banner">
-      <span class="sergiy__photo-banner"></span>
+      <img class="sergiy__photo-banner">
       <div class="banner__block-description">
         <h1 class="banner__title">
           Sergiy Misharin
@@ -83,7 +85,7 @@
       </div>
     </div>
   </section>
-  <section class="wrapper">
+  <!-- <section class="wrapper">
     <div class="slider__section">
       <div class="title__section-slider">
         <h2>Мои отзывы</h2>
@@ -270,6 +272,83 @@
         <button class="arrow__left-modile"></button>
         <button class="arrow__right-modile"></button>
       </div>
+    </div>
+  </section> -->
+  <section class=" wrapper as">
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./images/human_reviews.webp" alt="" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="description">
+                Добрый вечер Сергий 🤗
+                Хочу выразить вам искреннюю
+                Благодарность, за проделанную работу🙏
+                Вы все разложили по полочкам, очень доходчиво и понятно, указали точно,
+                что вызывает в моей жизни трудности и также как с этим работать, и все по датам 😍
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./images/human_reviews.webp" alt="" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="description">
+                Добрый вечер Сергий 🤗
+                Хочу выразить вам искреннюю
+                Благодарность, за проделанную работу🙏
+                Вы все разложили по полочкам, очень доходчиво и понятно, указали точно,
+                что вызывает в моей жизни трудности и также как с этим работать, и все по датам 😍
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <div class="card-image">
+                <img src="./images/human_reviews.webp" alt="" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="description">
+                Добрый вечер Сергий 🤗
+                Хочу выразить вам искреннюю
+                Благодарность, за проделанную работу🙏
+                Вы все разложили по полочкам, очень доходчиво и понятно, указали точно,
+                что вызывает в моей жизни трудности и также как с этим работать, и все по датам 😍
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <div class="card-image">
+                <img src="./images/human_reviews.webp" alt="" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="description">
+                Добрый вечер Сергий 🤗
+                Хочу выразить вам искреннюю
+                Благодарность, за проделанную работу🙏
+                Вы все разложили по полочкам, очень доходчиво и понятно, указали точно,
+                что вызывает в моей жизни трудности и также как с этим работать, и все по датам 😍
+              </p>
+            </div>
+          </div>
+x        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 </body>

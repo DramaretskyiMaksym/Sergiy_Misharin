@@ -3,7 +3,9 @@
   margin: 0px;
   padding: 0px;
 }
-
+body.lock {
+  overflow: hidden;
+}
 body {
   font-family: 'Montserrat',Arial, sans-serif;
   font-style: normal;

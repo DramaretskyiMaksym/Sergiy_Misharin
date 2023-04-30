@@ -1,3 +1,8 @@
+.slider__section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .block__arrow{
   display: none;
 }
@@ -55,13 +60,15 @@
 
 .human__reviews{
   display: flex;
+  align-items: flex-start;
   width: 100%;
   overflow: hidden;
-
 }
+
 .human__slider{
   display: flex;
   position: relative;
+  justify-content: flex-start;
   left: 0px;
   transition: all ease 1s;
   width: 100%;
@@ -72,7 +79,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100;
+  width: 100%;
   img{
     display: flex;
     width: 300px;
@@ -93,12 +100,14 @@
   .block__arrow-modile{
     display: none;
   }
+
   .block__arrow{
     display: flex;
     position: relative;
     width: 100px;
     height: 25px;
   }
+
   .arrow__left{
     content: "";
     position: absolute;
@@ -143,3 +152,52 @@
     max-width: 200px;
   }
 }
+
+.as{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6EB5C0;
+}
+
+
+.slide-container{
+  max-width: 1640px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 40px 0px;
+}
+.slider-content{
+  margin: 0 40px;
+}
+.card {
+  width: 200px;
+  background-color: #ffffff;
+}
+.image-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card-image{
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.description{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
