@@ -155,6 +155,8 @@
     }
   }
   address{
+    display: flex;
+    gap: 10px;
     font-style: normal;
   }
   .footer__сountry{
@@ -165,7 +167,37 @@
     align-items: center;
     color: #5B6262;
   }
-  @media(min-width:1208px){
+  .footer__change-position{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .footer__block-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media(min-width:768px){
+    .footer__change-position{
+      display: flex;
+      justify-content: space-between;
+    }
+    .block__footer-nav{
+      justify-content: center;
+      gap: 50px;
+    
+    }
+    .footer__list{
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  @media(min-width:1440px){
+    .footer__change-position{
+      justify-content: space-between;
+      gap: 270px;
+    }
+
     .footer__block{
       flex-direction: row;
       justify-content: space-between;

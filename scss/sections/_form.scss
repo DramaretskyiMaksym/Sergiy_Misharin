@@ -1,0 +1,128 @@
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+form {
+  max-width: 350px;
+  fieldset{
+    border: none;
+  }
+  // max-width: 350px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6EB5C0;
+  padding: 30px 25px 13px;
+  input{
+    display: block;
+    padding:6px 16px;
+    width: 300px;
+    height: 35px;
+    background-color: #6EB5C0;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    &::placeholder{
+      color: red;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: -0.06em;
+      color: #FFFFFF;
+    }
+  }
+  label{
+    display: block;
+  }
+}
+.lebel__name{
+  margin-bottom: 20px;
+}
+
+.fuel {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 15px;
+  max-width: 300px;
+  input {
+    width: 20px;
+    height: 20px;
+  }
+  label {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+  }
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+
+.date__birth{
+  h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+}
+.block__local{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap:10px;
+  margin-bottom: 25px;
+  h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+  }
+  select{
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    height: 35px;
+    background-color: #6EB5C0;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+  }
+}
+.local__country{
+  padding: 6px 108px;
+  option {
+    padding: 6px 97px;
+    width: 300px;
+    height: 35px;
+  }
+}
+form {
+  button{
+    width: 300px;
+    height: 35px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #252525;
+  }
+}
